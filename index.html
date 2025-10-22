@@ -1,0 +1,510 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Porfolio-Project</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+    <header>
+    <nav>
+  <div class="menu-logo">
+    <img src="MDALOGO.webp" alt="logo" />
+  </div>
+
+  <div class="menu-links">
+    <a href="#Home-Section">Home</a>
+    <a href="#About-Section">About</a>
+    <a href="#Services-Section">Services</a>
+    <a href="#Portfolio-Section">Portfolio</a>
+    <a href="#Skills-Section">Skills</a>
+    <a href="#Projects-Section">Projects</a>
+    <a href="#Certificates-Section">Certificates</a>
+    <a href="#Work-Section">Work</a>
+    <a href="#Contacts-Section">Contact</a>
+    <a href="#Testimonial-Section">Testimonials</a>
+    <a href="#CTA-Section">CTA</a>
+  </div>
+
+  <div class="menu-toggle">≡</div>
+</nav>
+
+    </header>
+
+  
+    <section id="Home-Section" class="hero">
+        <div class="hero">
+        <div class="hero-image">
+            <img src="Porfolio.webp" alt="profile">
+        </div>
+
+        <div class="hero-text">
+            <p class="intro">Hello, I'm</p>
+            <h1>Alauya, Moctader D.</h1>
+            <h3>NC II Holder (EIM) & BSIT Student</h3>
+            <p class="desc">
+                A BSIT student at Bestlink College of the Philippines and an NC II holder in
+                Electrical Installation and Management (EIM). I'm passionate about learning more in IT 
+                and using my skills to create practical solutions.
+            </p>
+            <div class="buttons">
+                <a href="#Contacts-Section" class="btn primary">Get in touch</a>
+            </div>
+        </div>
+    </section>
+
+<section id="About-Section" class="about-section">
+  <div class="about-container">
+
+    <div class="about-text">
+      <h1>Hello</h1>
+      <h2>Im Also know as Khadee</h2>
+      <p>I’m a BSIT student at Bestlink College of the Philippines and an NC II holder in Electrical Installation and Management (EIM). I’m more confident in my electrical skills since I enjoy troubleshooting and working on practical solutions, but I’m also improving my knowledge in IT.</p> 
+
+      <p>I can be flexible in both fields electrical and IT and I hope to build a career where I can combine these skills. I also like learning new things, exploring different tools, and applying what I learn to real situations.</p>
+
+      <p>As a student, I value hard work, teamwork, and being open to challenges. I believe that as I continue learning and growing, I’ll get closer to reaching my goals.</p>
+    </div>
+
+    <div class="slideshow-container">
+
+      <!-- Slide 1 -->
+      <div class="mySlides">
+        <img src="Project2.jpg" alt="Project 1">
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="mySlides">
+        <img src="Project1.jpg" alt="Project 2">
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="mySlides">
+        <img src="Project3.jpg" alt="Project 3">
+      </div>
+
+      <div class="mySlides">
+        <img src="PassingNC2.jpg" alt="Project 3">
+      </div>
+
+      <div class="mySlides">
+        <img src="NC2.jpg" alt="Project 3">
+      </div>
+
+      <div class="mySlides">
+        <img src="training.jpg" alt="Project 3">
+      </div>
+
+
+    </div>
+
+  </div>
+</section>
+<script src="script.js"></script>
+
+<section id="Services-Section">
+    <h2>My Services</h2>
+    <div class="services-container">
+        <div class="service-card">
+            <i class="fas fa-code"></i>
+            <h3>Web Development</h3>
+            <p>I can create simple and responsive websites using HTML, CSS, and a bit of JavaScript. Perfect for beginners' projects or personal use.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-pencil-ruler"></i>
+            <h3>UI/UX Design</h3>
+            <p>I design clean and user-friendly interfaces that make websites easy to use and look modern.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-bolt"></i>
+            <h3>Technical Skills</h3>
+            <p>With my NC II in Electrical Installation and Maintenance, I can also handle wiring, electrical troubleshooting, and basic installations.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-headset"></i>
+            <h3>IT Support</h3>
+            <p>I can provide basic troubleshooting for computers, networks, and software issues. Useful for students and small setups.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PORTFOLIO SECTION -->
+<section id="Portfolio-Section">
+  <h2>Portfolio</h2>
+  <div class="card-container">
+
+    <!-- CCTV Installing -->
+    <div class="card">
+      <img src="Work2.jpg" alt="CCTV Installing Project">
+      <div class="card-content">
+        <h2>CCTV Installing</h2>
+        <p>Installation and configuration of CCTV cameras for security and monitoring.</p>
+        <button class="btn" onclick="openModal('modal1')">View</button>
+      </div>
+    </div>
+
+    <!-- FDAS -->
+    <div class="card">
+      <img src="Project1.jpg" alt="FDAS Project">
+      <div class="card-content">
+        <h2>FDAS</h2>
+        <p>Setup of fire detection and alarm system (FDAS) with complete wiring.</p>
+        <button class="btn" onclick="openModal('modal2')">View</button>
+      </div>
+    </div>
+
+    <!-- WiFi Installing -->
+    <div class="card">
+      <img src="wifi.jpg" alt="WiFi Installing Project">
+      <div class="card-content">
+        <h2>WiFi Installing</h2>
+        <p>Configuration and installation of WiFi routers and access points.</p>
+        <button class="btn" onclick="openModal('modal3')">View</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- MODALS -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <h2>CCTV Installing</h2>
+    <p>Complete CCTV installation project that includes:</p>
+    <ul>
+      <li>Camera placement planning for maximum coverage</li>
+      <li>Wiring and cable management for neat setup</li>
+      <li>DVR/NVR installation and configuration</li>
+      <li>Remote viewing setup through mobile app</li>
+      <li>Testing and maintenance for reliable security</li>
+    </ul>
+    <img src="cctv2.jpg" alt="CCTV Example" style="width:100%; margin-top:10px; border-radius:5px;">
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <h2>FDAS</h2>
+    <p>FDAS project covering safety and emergency response setup:</p>
+    <ul>
+      <li>Installation of smoke detectors and heat sensors</li>
+      <li>Control panel wiring and integration</li>
+      <li>Connection of alarm bells and sirens</li>
+      <li>Testing of emergency response system</li>
+      <li>Compliance with standard fire safety guidelines</li>
+    </ul>
+    <img src="Fdas.jpg" alt="FDAS Example" style="width:100%; margin-top:10px; border-radius:5px;">
+  </div>
+</div>
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal3')">&times;</span>
+    <h2>WiFi Installing</h2>
+    <p>WiFi installation and network optimization project:</p>
+    <ul>
+      <li>Setup of routers and access points</li>
+      <li>Configuration of SSID, passwords, and security protocols</li>
+      <li>LAN/WAN cabling and cable management</li>
+      <li>Testing signal strength in multiple areas</li>
+      <li>Optimization for stable internet connection</li>
+    </ul>
+    <img src="Wifi.jpg" alt="WiFi Example" style="width:100%; margin-top:10px; border-radius:5px;">
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+<section id="Skills-Section" class="skills-section">
+  <h2>My Skills</h2>
+  <div class="skills-container">
+
+ <div class="skill-card">
+  <h3>Technical Skills</h3>
+  <ul>
+    <li>Web Development (HTML, CSS, JavaScript)</li>
+    <li>CCTV Installing</li>
+    <li>Wiring Installation (Lighting & Power)</li>
+    <li>Electrical Installation & Maintenance (NC II)</li>
+    <li>WiFi Installing</li>
+  </ul>
+</div>
+
+    <div class="skill-card">
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>Problem-Solving</li>
+        <li>Communication Skills</li>
+        <li>Teamwork & Collaboration</li>
+        <li>Time Management</li>
+        <li>Adaptability (fast learner)</li>
+      </ul>
+    </div>
+
+    <div class="skill-card">
+      <h3>Personal Interests</h3>
+      <ul>
+        <li>Exploring new technologies</li>
+        <li>DIY Electrical Projects</li>
+        <li>Designing simple websites</li>
+        <li>Playing strategy and online games</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+  <section id="Projects-Section" class="projects-section">
+  <h2>My Projects</h2>
+  <div class="projects-container">
+
+    <!-- Project 1: FDAS -->
+    <div class="project-card">
+      <img src="Fdas.jpg" alt="FDAS Diagram">
+      <div class="project-info">
+        <h3>FDAS (Fire Detection and Alarm System)</h3>
+        <p><strong>Description:</strong> A project involving the installation and wiring of a fire detection and alarm system with proper safety standards.</p>
+        <p><strong>Purpose:</strong> To practice designing and wiring an FDAS for building safety and emergency response.</p>
+        <p><strong>Outcome:</strong> Successfully created a functional FDAS diagram and setup that follows safety protocols.</p>
+      </div>
+    </div>
+
+    <!-- Project 2: 3-Gang Wiring -->
+    <div class="project-card">
+      <img src="3gang.jpg" alt="3-Gang Wiring Diagram">
+      <div class="project-info">
+        <h3>3-Gang Wiring Installation</h3>
+        <p><strong>Description:</strong> Wiring installation project with three switches controlling different lighting points.</p>
+        <p><strong>Purpose:</strong> To apply proper connections in handling multiple switches for lighting control.</p>
+        <p><strong>Outcome:</strong> Completed a neat and working 3-gang wiring setup with correct labeling and diagram.</p>
+      </div>
+    </div>
+
+    <!-- Project 3: Troubleshooting -->
+    <div class="project-card">
+      <img src="Project3.jpg" alt="Troubleshooting Diagram">
+      <div class="project-info">
+        <h3>Electrical Troubleshooting</h3>
+        <p><strong>Description:</strong> Practical exercises in identifying and repairing faulty electrical connections and circuits.</p>
+        <p><strong>Purpose:</strong> To enhance problem-solving skills in diagnosing and fixing electrical issues.</p>
+        <p><strong>Outcome:</strong> Successfully restored faulty circuits and documented diagrams showing solutions.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+    
+<section id="Certificates-Section" class="certificates-section">
+  <h2>My Certificates</h2>
+
+  <div class="certificates-container">
+    <div class="certificate">
+      <img src="NC2certificate.jpg" alt="National Certificate II" class="certificate-img">
+      <div class="certificate-text">
+        <h3>National Certificate II</h3>
+        <p>Issued by TESDA</p>
+      </div>
+    </div>
+
+    <div class="certificate">
+      <img src="School1.jpg" alt="Electrical Installation NC II" class="certificate-img">
+      <div class="certificate-text">
+        <h3>Electrical Installation NC II</h3>
+        <p>Issued by School & TESDA</p>
+      </div>
+    </div>
+
+    <div class="certificate">
+      <img src="School2.jpg" alt="Electrical And CCTV Training" class="certificate-img">
+      <div class="certificate-text">
+        <h3>Electrical And CCTV Training</h3>
+        <p>Issued by TESDA</p>
+      </div>
+    </div>
+
+    <div class="certificate">
+      <img src="School3.jpg" alt="Repacking Donation" class="certificate-img">
+      <div class="certificate-text">
+        <h3>Repacking and Distributing of Donation for the Fire Victims</h3>
+        <p>Issued by School</p>
+      </div>
+    </div>
+
+    <div class="certificate">
+      <img src="school4.jpg" alt="Reward for Service" class="certificate-img">
+      <div class="certificate-text">
+        <h3>Reward for Service in School</h3>
+        <p>Issued by School</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="Work-Section" class="work-section">
+  <h2>My Work</h2>
+
+  <div class="work-container">
+    <!-- Work 1 -->
+    <div class="work-item">
+      <img src="Work1.jpg" alt="Electrical Installation" class="work-img">
+      <div class="work-text">
+        <h3>Electrical Installation Project</h3>
+        <p>Completed electrical installation for a small office setup, including wiring, outlets, and lighting fixtures.</p>
+      </div>
+    </div>
+
+    <!-- Work 2 -->
+    <div class="work-item">
+      <img src="Work2.jpg" alt="CCTV Installation" class="work-img">
+      <div class="work-text">
+        <h3>CCTV Installation & Setup</h3>
+        <p>Installed and configured CCTV cameras for security monitoring in a school building.</p>
+      </div>
+    </div>
+
+
+    <!-- Work 3 -->
+    <div class="work-item">
+      <img src="Project2.jpg" alt="Electrical Maintenance" class="work-img">
+      <div class="work-text">
+        <h3>Electrical Maintenance</h3>
+        <p>Performed maintenance and troubleshooting for electrical panels and devices in residential and school environments.</p>
+      </div>
+    </div>
+
+    <!-- Work 4 -->
+    <div class="work-item">
+      <img src="Work6.jpg" alt="Donation Project" class="work-img">
+      <div class="work-text">
+        <h3>Fire Victim Donation Project</h3>
+        <p>Assisted in repacking and distributing donation materials for fire victims as part of community service.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+ <section id="Contacts-Section" class="contacts-section">
+  <h2>Contact Me</h2>
+<div class="contact-container">
+  <p>Feel free to reach out to me via the form below:</p>
+
+  <form action="#" method="post" class="contact-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <div class="contact-info">
+    <p>Email: moctaderalauya09@.com</p>
+    <p>Phone: +63 912 345 6789</p>
+    <p>Location: Philippines</p>
+  </div>
+</div>
+</section>
+
+<section id="Testimonial-Section" class="testimonial-section">
+  <h2>What People Say about me</h2>
+  <div class="testimonial-slide-container">
+    <div class="testimonial-card active">
+      <img src="Pingkian.jpg" alt="Maria Lopez" class="testimonial-img">
+      <div class="testimonial-text">
+        <p>"Khadee is amazing! She helped me launch my website quickly and professionally."</p>
+        <h3>- Kent Argie D. Pingkian</h3>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <img src="ErnelWenceslao.jpg" alt="John Santos" class="testimonial-img">
+      <div class="testimonial-text">
+        <p>"Working with Khadee was a breeze. She is skilled, reliable, and communicates clearly."</p>
+        <h3>- Ernel Wenceslao</h3>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <img src="testimonial2.jpg" alt="Angela Reyes" class="testimonial-img">
+      <div class="testimonial-text">
+        <p>"I really appreciate Khadee's dedication and attention to detail. My project exceeded my expectations!"</p>
+        <h3>- MR. Marc C. Cabral</h3>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+  <img src="Roland.jpg" alt="Angela Reyes" class="testimonial-img">
+  <div class="testimonial-text">
+    <p>"Khadee has a remarkable ability to understand project requirements and deliver results beyond expectations. Her creativity and dedication truly stand out!"</p>
+    <h3>- Roland Martinez</h3>
+  </div>
+</div>
+
+<div class="testimonial-card">
+  <img src="LoveNarag.jpg" alt="Angela Reyes" class="testimonial-img">
+  <div class="testimonial-text">
+    <p>"Working with Khadee was an absolute pleasure. She approaches every task with focus and care, ensuring excellent results every time!"</p>
+    <h3>- Love Narag</h3>
+  </div>
+</div>
+
+<div class="testimonial-card">
+  <img src="Carlo.Rosetejpg.jpg" alt="Angela Reyes" class="testimonial-img">
+  <div class="testimonial-text">
+    <p>"Khadee's professionalism and attention to detail make her stand out. She completed our project efficiently while exceeding all expectations!"</p>
+    <h3>- Carlo Rosete</h3>
+  </div>
+</div>
+
+  </div>
+  <div class="button-container">
+    <button id="next-btn">Next Comment</button>
+  </div>
+</section>
+
+    <!-- CTA -->
+<section id="CTA-Section" class="cta-section">
+  <div class="cta-container">
+    <h2>Hi! I’m Khadee 👋</h2>
+    <p>I’d love to help you with your next project. Whether it’s web design, development, or tech support, I’m ready to work with you and make your ideas a reality.</p>
+    
+    <!-- Optional: Extra info / benefits -->
+    <ul class="cta-benefits">
+      <li>✅ Clear communication</li>
+      <li>✅ Fast and reliable service</li>
+      <li>✅ Personalized solutions for your needs</li>
+    </ul>
+
+    <a href="#Contacts-Section" class="cta-button">Talk to Me</a>
+  </div>
+</section>
+
+  <script src="script.js"></script>
+
+  <footer>
+    <p>&copy; 2025 Moctader D. Alauya. All rights reserved.</p>
+  </footer>
+
+  <script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menuLinks = document.querySelector('.menu-links');
+
+  menuToggle.addEventListener('click', () => {
+    menuLinks.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>
