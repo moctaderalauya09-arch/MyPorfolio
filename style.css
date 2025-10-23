@@ -1019,26 +1019,6 @@ html {
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
 }
 
-
-
-section {
-  opacity: 0;
-  transform: translateY(60px);
-  transition: opacity 1.5s ease, transform 1.5s ease;
-}
-
-section:target {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.7s; 
-}
-
-
-section:first-of-type {
-  animation: fadeSlideIn 2s ease forwards;
-  animation-delay: 0.8s;
-}
-
 @keyframes fadeSlideIn {
   from {
     opacity: 0;
@@ -1139,3 +1119,4 @@ html {
     margin-top: 10px;
   }
 }
+
